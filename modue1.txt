@@ -31,7 +31,7 @@ Evaluating:
         Making sure sensitive data is held only inside the sandbox and not available to other applications.
 
 3.1 Can You Read Me Out There?
-Update code to ensure that secure comminucations are beting used:
+Update code to ensure that secure communications are being used:
 
     1. SecondFragment.kt
     2. ThirdFragment.kt
