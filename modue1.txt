@@ -1,0 +1,32 @@
+# Assignment 4 Module 1
+
+# 2.1 Understanding the Difference
+
+Evaluating:
+ SecondFragment.kt
+    var intent = Intent(Intent.ACTION_VIEW)
+    intent.type = "text/giftcards_browse"
+    intent.data = Uri.parse("https://appsec.moyix.net/api/index")
+    intent.putExtra("User", loggedInUser);
+    startActivity(intent)
+
+ ThirdFragment.kt
+    var intent = Intent(activity, ProductScrollingActivity::class.java)
+    intent.putExtra("User", loggedInUser);
+    startActivity(intent)
+
+
+1.What are the two types of Intents?
+    SecondFragment is an implicit intent to view gift cards.
+    ThirdFragment is an explicit intent specific t the application.
+2.Which type is generally more secure?
+    ThirdFragment is more secure since it can only be accessed inside the application and no other app can intercept it.
+3.What type of Intent is used in SecondFragment.kt?
+    Implicit to display information on the screen.
+4.What type is used in ThirdFragment.kt?
+    Explicit.
+5.Which Intent is considered the "proper" implementation?
+    ThirdFragment since sensitive information is being passed, but can only be accessed by the application. SecondFragment can be compromised by a malicious application.
+6.What does "proper" even mean in the context of secure Android development?
+    Making sure sensitive data is held only inside the sandbox and not available to other applications.
+
