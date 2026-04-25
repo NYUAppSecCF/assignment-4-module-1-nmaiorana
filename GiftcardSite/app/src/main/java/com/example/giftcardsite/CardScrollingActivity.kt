@@ -32,8 +32,6 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class CardScrollingActivity : AppCompatActivity() {
     private var loggedInUser : User? = null
-    private var mAccel: Sensor? = null;
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
