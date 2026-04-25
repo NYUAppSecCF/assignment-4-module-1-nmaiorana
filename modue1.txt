@@ -16,17 +16,30 @@ Evaluating:
     startActivity(intent)
 
 
-1.What are the two types of Intents?
-    SecondFragment is an implicit intent to view gift cards.
-    ThirdFragment is an explicit intent specific t the application.
-2.Which type is generally more secure?
-    ThirdFragment is more secure since it can only be accessed inside the application and no other app can intercept it.
-3.What type of Intent is used in SecondFragment.kt?
-    Implicit to display information on the screen.
-4.What type is used in ThirdFragment.kt?
-    Explicit.
-5.Which Intent is considered the "proper" implementation?
-    ThirdFragment since sensitive information is being passed, but can only be accessed by the application. SecondFragment can be compromised by a malicious application.
-6.What does "proper" even mean in the context of secure Android development?
-    Making sure sensitive data is held only inside the sandbox and not available to other applications.
+    1.What are the two types of Intents?
+        SecondFragment is an implicit intent to view gift cards.
+        ThirdFragment is an explicit intent specific t the application.
+    2.Which type is generally more secure?
+        ThirdFragment is more secure since it can only be accessed inside the application and no other app can intercept it.
+    3.What type of Intent is used in SecondFragment.kt?
+        Implicit to display information on the screen.
+    4.What type is used in ThirdFragment.kt?
+        Explicit.
+    5.Which Intent is considered the "proper" implementation?
+        ThirdFragment since sensitive information is being passed, but can only be accessed by the application. SecondFragment can be compromised by a malicious application.
+    6.What does "proper" even mean in the context of secure Android development?
+        Making sure sensitive data is held only inside the sandbox and not available to other applications.
 
+3.1 Can You Read Me Out There?
+Update code to ensure that secure comminucations are beting used:
+
+    1. SecondFragment.kt
+    2. ThirdFragment.kt
+    3. CardScrollingActivity.kt
+    4. ProductScrollingActivity.kt
+    5. UseCard.kt
+    6. GetCard.kt
+    7. CardRecyclerViewAdapter.kt
+    8. RecyclerViewAdapter.kt
+    9. Reporter.kt
+    10.strings.xml
