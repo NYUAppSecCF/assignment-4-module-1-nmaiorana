@@ -30,7 +30,7 @@ Evaluating:
     6.What does "proper" even mean in the context of secure Android development?
         Making sure sensitive data is held only inside the sandbox and not available to other applications.
 
-3.1 Can You Read Me Out There?
+3.0 Can You Read Me Out There?
 Update code to ensure that secure communications are being used:
 
     1. SecondFragment.kt
@@ -43,3 +43,20 @@ Update code to ensure that secure communications are being used:
     8. RecyclerViewAdapter.kt
     9. Reporter.kt
     10.strings.xml
+
+4.0 Part 4: Oops, Was That Card Yours?
+Looking into the security vulnerability of a user using a card. My thoughts are that there is nothing indicating that the user is the owner of the card. The server should do a check to see if the card is owned by the user prior to letting the user use the card.
+
+My investigation shows that this isa Broken Object Level Authorization (BOLA) vulnerability or Insecure Direct Object Reference (IDOR) vulnerability.
+
+5.0 Part 5: Privacy is Important
+Remove any functionality that:
+    •Collects metrics
+    •Uses sensors
+    •Requests unnecessary permissions
+
+    Focus on the following files:
+    1.AndroidManifest.xml
+    2.UserInfo.kt
+    3.CardScrollingActivity.kt
+    4.ProductScrollingActivity.kt
